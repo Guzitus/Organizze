@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#404F9C</color>
+    <color name="colorPrimaryDark">#394386</color>
+    <color name="colorAccent">#445DDB</color>
+    <color name="colorTextFloatingMenu">#838383</color>
+    <color name="colorFabReceitas">#4AC968</color>
+    <color name="colorFabDespesas">#DD514C</color>
+
+
+</resources>

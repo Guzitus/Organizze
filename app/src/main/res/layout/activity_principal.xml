@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PrincipalActivity">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="32dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:backgroundTint="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_add_branco_24dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabReceitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="false"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorFabReceitas"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/fabMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_add_branco_24dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabDespesas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="false"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorFabDespesas"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@+id/fabReceitas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_add_branco_24dp" />
+
+    <include layout="@layout/content_principal" />
+
+    <TextView
+        android:id="@+id/textDespesas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorTextFloatingMenu"
+        android:padding="4dp"
+        android:text="Despesas"
+        android:textColor="@android:color/white"
+
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/fabDespesas"
+        app:layout_constraintEnd_toStartOf="@id/fabDespesas"
+        app:layout_constraintTop_toBottomOf="@id/fabDespesas" />
+
+    <TextView
+        android:id="@+id/textReceitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorTextFloatingMenu"
+        android:padding="4dp"
+        android:text="Receitas"
+        android:textColor="@android:color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/fabReceitas"
+        app:layout_constraintEnd_toStartOf="@id/fabReceitas"
+        app:layout_constraintTop_toBottomOf="@id/fabReceitas" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
